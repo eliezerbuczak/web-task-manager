@@ -4,10 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href /NOME_DO_REPOSITORIO/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "api": "cd src/ && json-server --watch db.json --port 8000"
+    "api": "cd src/ && json-server --watch db.json --port 8000",
+    "deploy": "ng build --base-href /NOME_DO_REPOSITORIO/ && npx angular-cli-ghpages --dir=dist/web-task-manager"
   },
   "private": true,
   "dependencies": {
@@ -39,6 +40,7 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "postcss": "^8.4.36",
     "tailwindcss": "^3.4.1",
-    "typescript": "~5.3.2"
+    "typescript": "~5.3.2",
+    "angular-cli-ghpages": "^1.0.0"
   }
 }
