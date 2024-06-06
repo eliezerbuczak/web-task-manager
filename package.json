@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "api": "cd src/ && json-server --watch db.json --port 8000",
-    "deploy": "ng build --base-href /NOME_DO_REPOSITORIO/ && npx angular-cli-ghpages --dir=dist/web-task-manager"
+    "deploy": "ng build --base-href /web-task-manager/ && npx angular-cli-ghpages --dir=dist/web-task-manager"
   },
   "private": true,
   "dependencies": {
